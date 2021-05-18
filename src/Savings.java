@@ -1,4 +1,6 @@
-public class Savings extends Account {
+public class Savings extends Account implements Depositable
+
+{
     private double interestRate;
 
     public Savings(int accountNumber, double interest) {
@@ -27,4 +29,12 @@ public class Savings extends Account {
     {
         return("Savings Account Information\nAccount Number: " + getAccountNumber() + "\nBalance: " + getBalance() + "\nInterest Rate: " + getInterestRate() + "%");
     }
+
+    @Override
+    public void deposit(double n) {
+
+        
+    }
+
+
 }
